@@ -1,0 +1,537 @@
+gender
+  female
+  male
+  genderless
+
+moveAilment
+  unknown
+  none
+  paralysis
+  sleep
+  freeze
+  burn
+  poison
+  badlyPoison
+  confusion
+  infatuation
+  trap
+  nightmare
+  torment
+  disable
+  yawn
+  healBlock
+  identifiedGhostType
+  identifiedDarkType
+  grounded
+  telekinesis
+  leechSeed
+  embargo
+  perishSong
+  ingrain
+
+moveCategory
+  damage
+  ailment
+  netGoodStats
+  heal
+  damageAilment
+  swagger
+  damageLower
+  damageRaise
+  damageHeal
+  ohko
+  wholeFieldEffect
+  fieldEffect
+  forceSwitch
+  unique
+
+moveDamageClass
+  status
+  physical
+  special
+
+moveTarget
+  # specificMove
+  # selectedPokemonMeFirst
+  ally
+  usersField
+  userOrAlly
+  opponentsField
+  user
+  randomOpponent
+  allOtherPokemon
+  selectedPokemon
+  allOpponents
+  entireField
+  userAndAllies
+  allPokemon
+
+pokedexColor
+  black
+  blue
+  brown
+  gray
+  green
+  pink
+  purple
+  red
+  white
+  yellow
+
+pokedexShape
+  ball
+  squiggle
+  fish
+  arms
+  blob
+  upright
+  legs
+  quadruped
+  wings
+  tentacles
+  heads
+  humanoid
+  bugWings
+  armor
+
+stat
+  hp
+  atk
+  def
+  sat
+  sdf
+  spe
+  acc
+  eva
+
+type
+  normal
+  fighting
+  flying
+  poison
+  ground
+  rock
+  bug
+  ghost
+  steel
+  fire
+  water
+  grass
+  electric
+  psychic
+  ice
+  dragon
+  dark
+  fairy
+
+moveMeta
+  ailmentChance
+  flinchChance
+  statChance
+  ailment
+  category
+  critRate
+  drain
+  healing
+  maxHit
+  minHit
+  maxTurn
+  minTurn
+
+moveDesc
+  +20 power for each of the user's stat boosts
+  # -1 evasion; clears user and target side's hazards
+  # 1.5x damage if foe holds an item. Removes item
+  # 1/8 of target's HP is restored to user every turn
+  10% chance to burn the foe(s)
+  10% chance to burn the target
+  # 10% chance to burn the target. Thaws user
+  10% chance to burn. 10% chance to flinch
+  10% chance to confuse the target
+  10% chance to flinch the target
+  # 10% chance to freeze foe(s). Can't miss in hail
+  10% chance to freeze the foe(s)
+  10% chance to freeze the target
+  10% chance to freeze. 10% chance to flinch
+  # 10% chance to freeze. Super effective on Water
+  10% chance to lower the foe's Attack by 1
+  10% chance to lower the foe(s) Sp.Def by 1
+  10% chance to lower the foe(s) Speed by 1
+  10% chance to lower the target's Attack by 1
+  10% chance to lower the target's Sp.Def by 1
+  10% chance to lower the target's Speed by 1
+  10% chance to paralyze the target
+  10% chance to paralyze. 10% chance to flinch
+  10% chance to poison adjacent Pokemon
+  10% chance to raise all stats by 1 (not acc/eva)
+  10% chance to raise the user's Attack by 1
+  10% chance to raise the user's Defense by 1
+  # 10% chance to sleep foe(s). Meloetta transforms
+  100% chance to burn the target
+  100% chance to confuse the target
+  100% chance to lower adjacent Pkmn Speed by 1
+  100% chance to lower the foe(s) Sp.Atk by 1
+  100% chance to lower the foe(s) Speed by 1
+  100% chance to lower the target's accuracy by 1
+  100% chance to lower the target's Sp.Atk by 1
+  100% chance to lower the target's Sp.Def by 2
+  100% chance to lower the target's Speed by 1
+  100% chance to paralyze the target
+  100% chance to raise the user's Attack by 1
+  100% chance to raise the user's Speed by 1
+  20% chance to burn the target
+  20% chance to confuse the target
+  20% chance to flinch the foe(s)
+  20% chance to flinch the target
+  20% chance to lower the target's Defense by 1
+  20% chance to lower the target's Sp.Def by 1
+  20% chance to paralyze or burn or freeze target
+  20% chance to paralyze the target
+  20% chance to raise the user's Attack by 1
+  30% chance to burn adjacent Pokemon
+  30% chance to burn the target
+  # 30% chance to burn the target. Thaws target
+  # 30% chance to confuse target. Can't miss in rain
+  # 30% chance to flinch the foe(s)
+  # 30% chance to flinch the target
+  # 30% chance to lower the foe(s) accuracy by 1
+  # 30% chance to lower the target's accuracy by 1
+  # 30% chance to lower the target's Defense by 1
+  # 30% chance to lower the target's Sp.Atk by 1
+  30% chance to paralyze adjacent Pokemon
+  # 30% chance to paralyze target. Can't miss in rain
+  30% chance to paralyze the target
+  30% chance to poison the target
+  # 40% chance to lower the target's accuracy by 1
+  # 40% chance to lower the target's Sp.Def by 2
+  40% chance to poison the target
+  # 40, 80, 120 power, or heals target by 1/4 max HP
+  # 5 turns. Can't status, -Dragon power vs grounded
+  # 5 turns. Grounded: +Electric power, can't sleep
+  # 5 turns. Grounded: +Grass power, +1/16 max HP
+  # 50% chance to badly poison the target
+  # 50% chance to burn the target. Thaws user
+  # 50% chance to lower the target's accuracy by 1
+  # 50% chance to lower the target's Defense by 1
+  # 50% chance to lower the target's Sp.Atk by 1
+  # 50% chance to lower the target's Sp.Def by 1
+  # 50% chance to raise the user's Sp.Atk by 1
+  # 50% chance to raise user's Def by 2 for each hit
+  # 60 power +20 for each of the target's stat boosts
+  # 70% chance to raise the user's Sp.Atk by 1
+  # A sleeping target is hurt by 1/4 max HP per turn
+  # A target of the opposite gender gets infatuated
+  # Adds Ghost to the target's type(s)
+  # Adds Grass to the target's type(s)
+  # All active Pokemon will faint in 3 turns
+  # All healthy allies aid in damaging the target
+  Always does 20 HP of damage
+  Always does 40 HP of damage
+  Always leaves the target with at least 1 HP
+  Always results in a critical hit
+  # Attack depends on terrain (default Tri Attack)
+  # Averages Attack and Sp.Atk stats with target
+  # Averages Defense and Sp.Def stats with target
+  # Badly poisons the target
+  # Boosts next Electric move and user's Sp.Def by 1
+  # Bounces back certain non-damaging moves
+  # Bounces turn 1. Hits turn 2. 30% paralyze
+  # Breaks the target's protection for this turn
+  Burns the target
+  # Can hit Pokemon using Bounce, Fly, or Sky Drop
+  # Cannot be selected until the user eats a Berry
+  # Changes the target's move to Electric this turn
+  # Changes the target's type to Water
+  # Changes user's type by terrain (default Normal)
+  # Changes user's type to match its first move
+  # Changes user's type to resist target's last move
+  # Charges turn 1. Hits turn 2. 30% burn
+  # Charges turn 1. Hits turn 2. 30% paralyze
+  # Charges turn 1. Hits turn 2. No charge in sunlight
+  # Charges, then hits foe(s) turn 2. High crit ratio
+  # Charges, then hits turn 2. 30% flinch. High crit
+  # Charges, then raises SpA, SpD, Spe by 2 turn 2
+  # Combines Flying in its type effectiveness
+  # Confuses adjacent Pokemon
+  # Confuses the target
+  # Copies a foe at 1.5x power. User must be faster
+  # Copies target's stats, moves, types, and Ability
+  # Copies the target's current stat stages
+  # Cures the user's party of all status conditions
+  # Curses if Ghost, else +1 Atk, +1 Def, -1 Spe
+  # Damages Pokemon next to the target as well
+  # Damages target based on Defense, not Sp.Def
+  # Darkrai: Puts the foe(s) to sleep
+  # Destroys screens, unless the target is immune
+  # Destroys the foe(s) Berry/Gem
+  # Digs underground turn 1, strikes turn 2
+  # Disappears turn 1. Hits turn 2. Breaks protection
+  # Dives underwater turn 1, strikes turn 2
+  Does damage equal to 1/2 target's current HP
+  # Does damage equal to the user's HP. User faints
+  # Does damage equal to the user's level
+  # Does nothing (but we still love it)
+  # Effect varies with terrain. (30% paralysis chance)
+  # Eliminates all stat changes
+  # Eliminates the target's stat changes
+  # Fails if the user takes damage before it hits
+  # Fails unless each known move has been used
+  # Fighting, Normal hit Ghost. Evasiveness ignored
+  # Flee from wild Pokemon battles
+  # Flies up on first turn, then strikes the next turn
+  # Flings the user's item at the target. Power varies
+  # For 3 turns, target floats but moves can't miss it
+  # For 3 turns, the target can't use status moves
+  # For 4 turns, allies' Speed is doubled
+  # For 4 turns, disables the target's last move used
+  # For 5 turns, a sandstorm rages
+  # For 5 turns, all Defense and Sp.Def stats switch
+  # For 5 turns, all held items have no effect
+  # For 5 turns, Electric-type attacks have 1/3 power
+  # For 5 turns, Fire-type attacks have 1/3 power
+  # For 5 turns, hail crashes down
+  # For 5 turns, heavy rain powers Water moves
+  # For 5 turns, intense sunlight powers Fire moves
+  # For 5 turns, negates all Ground immunities
+  # For 5 turns, physical damage to allies is halved
+  # For 5 turns, protects user's party from stat drops
+  # For 5 turns, protects user's party from status
+  # For 5 turns, shields user's party from critical hits
+  # For 5 turns, slower Pokemon move first
+  # For 5 turns, special damage to allies is halved
+  # For 5 turns, the foe(s) is prevented from healing
+  # For 5 turns, the target's item has no effect
+  # For 5 turns, the user is immune to Ground moves
+  # Forces the target to move last this turn
+  # Forces the target to switch to a random ally
+  # Frees user from hazards/partial trap/Leech Seed
+  # Grounds adjacent foes. First hit neutral on Flying
+  Has 1/2 recoil
+  Has 1/4 recoil
+  Has 33% recoil
+  # Has 33% recoil. 10% chance to burn. Thaws user
+  Has 33% recoil. 10% chance to paralyze target
+  # Heals 50% HP. Flying-type removed 'til turn ends
+  Heals the target by 50% of its max HP
+  # Heals the user based on uses of Stockpile
+  Heals the user by 50% of its max HP
+  # Heals the user by a weather-dependent amount
+  High critical hit ratio
+  High critical hit ratio. 10% chance to burn
+  High critical hit ratio. 10% chance to poison
+  High critical hit ratio. Hits adjacent foes
+  Hits 2 times in one turn
+  Hits 2 times. Each hit has 20% chance to poison
+  Hits 2-5 times in one turn
+  Hits 3 times. Each hit can miss, but power rises
+  # Hits adjacent foes. Prevents them from switching
+  # Hits adjacent Pokemon sharing the user's type
+  # Hits adjacent Pokemon. Power doubles on Dig
+  # Hits adjacent Pokemon. Power doubles on Dive
+  # Hits adjacent Pokemon. Power varies; 2x on Dig
+  # Hits adjacent Pokemon. The user faints
+  # Hits first. First turn out only. 100% flinch chance
+  # Hits two turns after being used
+  # Hoopa-U: Lowers user's Def by 1; breaks protection
+  # Hurts foes on switch-in. Factors Rock weakness
+  # Hurts grounded foes on switch-in. Max 3 layers
+  # If an opponent knocks out the user, it also faints
+  # If hit by an attack, returns 1.5x damage
+  # If hit by physical attack, returns double damage
+  # If hit by special attack, returns double damage
+  # If the user faints, the attack used loses all its PP
+  # If the user has no item, it steals the target's
+  # If using a Fire move, target loses 1/4 max HP
+  # Ignores the target's stat stage changes
+  # Inverts the target's stat stages
+  # Lasts 2-3 turns. Confuses the user afterwards
+  # Lasts 3 turns. Active Pokemon cannot fall asleep
+  # Less power as user's HP decreases. Hits foe(s)
+  # Lowers Atk, Sp.Atk, Speed of poisoned foes by 1
+  # Lowers Def, SpD by 1; raises Atk, SpA, Spe by 2
+  # Lowers Speed of grounded foes by 1 on switch-in
+  # Lowers target's Atk, Sp.Atk by 1. User switches
+  # Lowers target's Attack, Sp.Atk by 2. User faints
+  Lowers the foe(s) Attack by 1
+  Lowers the foe(s) Defense by 1
+  Lowers the foe(s) evasiveness by 2
+  Lowers the foe(s) Sp.Atk by 2 if opposite gender
+  Lowers the foe(s) Speed by 2
+  # Lowers the PP of the target's last move by 4
+  Lowers the target's accuracy by 1
+  Lowers the target's Attack and Defense by 1
+  Lowers the target's Attack and Sp.Atk by 1
+  Lowers the target's Attack by 1
+  Lowers the target's Attack by 2
+  Lowers the target's Defense by 2
+  Lowers the target's HP to the user's HP
+  Lowers the target's Sp.Atk by 1
+  Lowers the target's Sp.Atk by 2
+  Lowers the target's Sp.Def by 2
+  Lowers the target's Speed by 2
+  Lowers the user's Attack and Defense by 1
+  Lowers the user's Defense and Sp.Def by 1
+  Lowers the user's Defense, Sp.Def, Speed by 1
+  Lowers the user's Sp.Atk by 2
+  Lowers the user's Speed by 1
+  Max 102 power at maximum Happiness
+  Max 102 power at minimum Happiness
+  More power the faster the user is than the target
+  # More power the fewer PP this move has left
+  More power the heavier the target
+  # More power the heavier the user than the target
+  More power the less HP the user has left
+  More power the more HP the target has left
+  More power the slower the user than the target
+  # More power with more uses of Stockpile
+  # Nearly always goes first
+  Next turn, 50% of the user's max HP is restored
+  No additional effect
+  No additional effect. Hits adjacent foes
+  No additional effect. Hits adjacent Pokemon
+  # No competitive use
+  # No competitive use. Or any use
+  # No foe can use any move known by the user
+  # Normal moves become Electric type this turn
+  # Nullifies Detect, Protect, and Quick/Wide Guard
+  # Nullifies the target's Ability
+  # OHKOs non-Ice targets. Fails if user's lower level
+  OHKOs the target. Fails if user is a lower level
+  # One adjacent ally's move power is 1.5x this turn
+  Paralyzes the target
+  # Permanently copies the last move target used
+  Picks a random move
+  # Poisons grounded foes on switch-in. Max 2 layers
+  Poisons the foe(s)
+  Poisons the target
+  # Power and type depends on the user's Berry
+  # Power doubles and type varies in each weather
+  # Power doubles during Fly, Bounce, and Sky Drop
+  # Power doubles if a foe is switching out
+  # Power doubles if an ally fainted last turn
+  # Power doubles if others used Round this turn
+  # Power doubles if target is asleep, and wakes it
+  # Power doubles if target is paralyzed, and cures it
+  # Power doubles if target was damaged this turn
+  # Power doubles if the target has a status ailment
+  Power doubles if the target is poisoned
+  Power doubles if the target's HP is 50% or less
+  # Power doubles if the user has no held item
+  # Power doubles if the user moves after the target
+  # Power doubles if used after Fusion Bolt
+  # Power doubles if used after Fusion Flare
+  Power doubles if user is burn/poison/paralyzed
+  # Power doubles if user is damaged by the target
+  # Power doubles with each hit, up to 160
+  # Power doubles with each hit. Repeats for 5 turns
+  # Power increases when used on consecutive turns
+  # Prevents all Pokemon from switching next turn
+  # Prevents moves from affecting the user this turn
+  # Protects allies from attacks. First turn out only
+  # Protects allies from multi-target moves this turn
+  # Protects allies from priority attacks this turn
+  # Protects allies from Status moves this turn
+  # Protects from attacks. Contact: lowers Atk by 2
+  # Protects from moves. Contact: loses 1/8 max HP
+  Psychic hits Dark. Evasiveness ignored
+  # Puts the target to sleep after 1 turn
+  # Puts the target to sleep
+  # Raises a random stat of the user or an ally by 2
+  # Raises an ally's Sp.Def by 1
+  # Raises Atk, Sp.Atk of grounded Grass types by 1
+  # Raises Def, Sp.Def of allies with Plus/Minus by 1
+  # Raises Defense by 1 of all active Grass types
+  # Raises the target's Attack by 2 and confuses it
+  # Raises the target's Sp.Atk by 1 and confuses it
+  # Raises the user's Attack and accuracy by 1
+  # Raises the user's Attack and Defense by 1
+  # Raises the user's Attack and Sp.Atk by 1
+  # Raises the user's Attack and Speed by 1
+  # Raises the user's Attack by 1 if hit during use
+  # Raises the user's Attack by 1
+  # Raises the user's Attack by 2
+  Raises the user's critical hit ratio by 2
+  # Raises the user's Defense and Sp.Def by 1
+  # Raises the user's Defense by 1
+  # Raises the user's Defense by 2
+  # Raises the user's Defense by 3
+  # Raises the user's evasiveness by 1
+  # Raises the user's evasiveness by 2
+  # Raises the user's Sp.Atk and Sp.Def by 1
+  # Raises the user's Sp.Atk by 2
+  # Raises the user's Sp.Atk by 3
+  # Raises the user's Sp.Atk, Sp.Def, Speed by 1
+  # Raises the user's Sp.Def by 2
+  # Raises the user's Speed by 2 and Attack by 1
+  # Raises the user's Speed by 2
+  # Raises the user's Speed by 2; user loses 100 kg
+  # Raises user's Attack and Sp.Atk by 1; 2 in Sun
+  # Raises user's Attack by 3 if this KOes the target
+  # Raises user's Attack, Defense, and accuracy by 1
+  # Raises user's Defense by 1 on turn 1. Hits turn 2
+  # Raises user's Defense, Sp.Def by 1. Max 3 uses
+  # Random damage equal to 0.5x-1.5x user's level
+  # Removes the target's Ground immunity
+  # Restores the item the user last used
+  # Scatters coins
+  # Shares HP of user and target equally
+  # Swaps all stat changes with target
+  # Swaps Attack and Sp.Atk stat stages with target
+  # Swaps Defense and Sp.Def changes with target
+  # Switches user's Attack and Defense stats
+  # Target can't select the same move twice in a row
+  # The foes' moves target the user on the turn used
+  # The last move the target used replaces this one
+  # The target cannot switch out
+  # The target makes its move right after the user
+  # The target repeats its last move for 3 turns
+  # The target's Ability becomes Insomnia
+  # The target's Ability becomes Simple
+  # The target's Ability changes to match the user's
+  # The user and the target trade Abilities
+  # The user survives the next hit with at least 1 HP
+  # The user swaps positions with its ally
+  # This move does not check accuracy
+  # This move does not check accuracy. Goes last
+  # This move does not check accuracy. Hits foes
+  # Transfers the user's status ailment to the target
+  # Traps and damages the target for 4-5 turns
+  # Traps/grounds user; heals 1/16 max HP per turn
+  # Type varies based on the held Drive
+  # Type varies based on the held Plate
+  # Use with Fire or Water Pledge for added effect
+  # Use with Grass or Fire Pledge for added effect
+  # Use with Grass or Water Pledge for added effect
+  # User and foe fly up turn 1. Damages on turn 2
+  # User becomes the same type as the target
+  # User cannot move next turn
+  # User cures its burn, poison, or paralysis
+  # User faints. Replacement is fully healed, with PP
+  # User faints. Replacement is fully healed
+  # User gains 1/2 HP inflicted. Sleeping target only
+  # User is hurt by 50% of its max HP if it misses
+  # User loses 25% of its max HP as recoil
+  # User loses 50% max HP. Maximizes Attack
+  # User must be asleep. 30% chance to flinch target
+  # User must be asleep. Uses another known move
+  # User passes its held item to the target
+  # User recovers 1/16 max HP per turn
+  # User recovers 50% of the damage dealt
+  # User recovers 75% of the damage dealt
+  # User replaces its Ability with the target's
+  # User sleeps 2 turns and restores HP and status
+  # User steals and eats the target's Berry
+  # User steals certain support moves to use itself
+  # User switches its held item with the target's
+  # User switches out after damaging the target
+  # User switches, passing stat changes and more
+  # User takes 1/4 its max HP to put in a Substitute
+  # User uses the target's last used move against it
+  # User's next move will not miss the target
+  # Uses a random move known by a team member
+  # Uses target's Attack stat in damage calculation
+  # Uses the last move used in the battle
+  # Usually goes first
+  # Usually goes first. Fails if target is not attacking
+  # Varies in type based on the user's IVs
+  # Waits 2 turns; deals double the damage taken

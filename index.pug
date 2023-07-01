@@ -1,0 +1,51 @@
+#app(
+	v-cloak
+	@contextMenu.prevent
+	@wheel="onWheelSelTeam"
+)
+	#canvas
+	#showPkdEl.d-full.bg-overlay(v-show="isShowPkd")
+		.d-middle.w-8.h-7
+			.d-flex.column.middle.w-8.h-8
+				.pkdsEl.grow.center.w-7(@wheel.stop="mouseLeavePkd()")
+					button.pkdEl(
+						v-for="pkd in $options.Pkd.list"
+						:key="pkd.name"
+						:class="classPkd(pkd)"
+						:style="stylePkd(pkd)"
+						:disabled="!pkd.moves.length"
+						@click="clickPkd(pkd)"
+						@mouseenter="mouseEnterPkd(pkd, $event)"
+						@mouseleave="mouseLeavePkd()"
+					)
+				.pt-2.d-flex.between.w-7
+					.w-3
+					.w-2.text-center
+						.nes-btn Bắt đầu
+					.w-3.text-right
+						.nes-btn(@click="form.name = 'menu'") Dàn trận...
+		#infoPkdEl
+			.nes-container.is-dark.p-1(v-if="hoverPkdName")
+				p {{$options.Pkd.list[hoverPkdName].text}}
+				.nes-badge.is-small(:class="classInfoPkdTypes($options.Pkd.list[hoverPkdName].types)")
+					span.is-dark(
+						v-for="type in $options.Pkd.list[hoverPkdName].types"
+						:style="styleInfoPkdType(type)"
+					) {{type}}
+				ul.nes-list.is-disc.is-small
+					li(v-for="move in $options.Pkd.list[hoverPkdName].moves") {{move}}
+	#selTeamsEl(
+		@mouseenter="isHoverSelTeamsEl = true"
+		@mouseleave="isHoverSelTeamsEl = false"
+	)
+		.selTeam(
+			v-for="teamColor, team in teamColors"
+			:style="styleSelTeam(team)"
+			@click="clickSelTeam(team)"
+		)
+	dialog.nes-dialog.is-dark(v-if="form.name == 'menu'" open)
+		p Chọn kiểu dàn trận
+		.d-flex.column
+			button.nes-btn.text-left(@click="clickForm649TeamBySpecies") 649 đội theo loài Pokémon
+			button.nes-btn.text-left(@click="clickForm18TeamByType") 18 đội theo hệ Pokémon
+			button.nes-btn.text-left(@click="clickForm2TeamBy649Species") 2 đội mỗi đội 649 loài Pokémon

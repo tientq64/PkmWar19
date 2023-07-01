@@ -1,0 +1,226 @@
+@font-face
+	font-family "Press Start 2P"
+	src url("https://cdn.jsdelivr.net/gh/tiencoffee/fonts/FVF Fernando.ttf")
+
+body
+	overflow hidden
+	image-rendering pixelated
+	user-select none
+	user-drag none
+
+a
+button
+input
+textarea
+select
+	&:focus
+		outline 0
+.nes-input
+.nes-select select
+	height 3rem
+	padding 0 1rem
+	line-height normal
+.nes-container:not(.is-dark)
+	background-color #fff
+.nes-list
+	padding-left 18px
+	&.is-small
+		font-size 12px
+	li
+		padding-left 4px
+		&:before
+			top calc(50% - 4px) !important
+.nes-badge
+	span
+		box-shadow 0 .4em #212529, 0 -.4em #212529, .4em 0 #212529, -.4em 0 #212529 !important
+	&.is-small
+		font-size 12px
+	&.is-splited
+		span
+			&:first-child
+				box-shadow 0 .4em #212529, 0 -.4em #212529, -.4em 0 #212529 !important
+			&:last-child
+				box-shadow 0 .4em #212529, 0 -.4em #212529, .4em 0 #212529 !important
+.dialog-menu
+	margin-top 1rem
+	text-align right
+	> .nes-btn:not(:first-child)
+		margin-left 1rem
+.is-dark
+	.nes-btn:not([class*=is-])
+		color #212529
+	.nes-list
+		li:before
+			color #fff
+.nes-dialog
+	top 50%
+	transform translateY(-50%)
+
+.absolute
+	position absolute
+.relative
+	position relative
+.fixed
+	position fixed
+.d-full
+	position absolute
+	left 0
+	top 0
+	width 100%
+	height 100%
+.d-flex
+	display flex
+.column
+	flex-direction column
+.start
+	justify-content flex-start
+.center
+	justify-content center
+.between
+	justify-content space-between
+.around
+	justify-content space-around
+.evenly
+	justify-content space-evenly
+.end
+	justify-content flex-end
+.top
+	align-items flex-start
+.middle
+	align-items center
+.bottom
+	align-items flex-end
+.grow
+	flex-grow 1
+
+.events-none
+	pointer-events none
+.events-all
+	pointer-events all
+.visible
+	visibility visible
+.hidden
+	visibility hidden
+.nowrap
+	white-space nowrap
+
+for ver, i in top "" bottom
+	for hor, j in left "" right
+		.d-{ver + hor or "middle"}
+			position absolute
+			if hor is right
+				right 0
+			else
+				left j * 50%
+			if ver is bottom
+				bottom 0
+			else
+				top i * 50%
+			if !hor and !ver
+				transform translate(-50%, -50%)
+			else if !hor
+				transform translateX(-50%)
+			else if !ver
+				transform translateY(-50%)
+
+for i in 0..8
+	val = i / 8 * 100%
+	.w-{i}
+		width val
+	.h-{i}
+		height val
+
+for i in 0..5
+	.z-{i}
+		z-index i
+	if i
+		.-z-{i}
+			z-index -i
+
+props = {
+	m: margin
+	p: padding
+}
+sides = {
+	"": ""
+	x: 0
+	y: 0
+	l: -left
+	t: -top
+	r: -right
+	b: -bottom
+}
+for i, prop in props
+	start = i is "m" ? -5 : 0
+	for j, side in sides
+		for k in start..5
+			val = (k)rem !important
+			sign = k < 0 ? "-" : ""
+			kk = abs(k)
+			.{sign}{i}{j}-{kk}
+				if j is "x"
+					{prop}-left val
+					{prop}-right val
+				else if j is "y"
+					{prop}-top val
+					{prop}-bottom val
+				else
+					{prop}{side} val
+
+for hor in left center right
+	.text-{hor}
+		text-align hor
+
+.bg-overlay
+	background #ebe0c4ea
+#canvas
+	position absolute
+.pkdsEl
+	padding 2px
+	display grid
+	grid-template-columns repeat(auto-fit, 68px)
+	grid-auto-rows 68px
+	overflow overlay
+	&::-webkit-scrollbar
+		display none
+.pkdEl
+	border 0
+	background-size 200%
+	background-position-y 100%
+	background-repeat no-repeat
+	background-color transparent
+	outline-offset -2px
+	&:not(.active):hover
+		filter drop-shadow(2px 2px#fff)drop-shadow(2px -2px#fff)drop-shadow(-2px 2px#fff)drop-shadow(-2px -2px#fff)
+	&.active
+		outline solid 3px #212529
+		background-color #2125292a
+	&:disabled
+		opacity .3
+		pointer-events none
+#infoPkdEl
+	z-index 1
+	pointer-events none
+
+#selTeamsEl
+	position absolute
+	top 0
+	left 50%
+	padding-top 8px
+	display inline-flex
+	transform translateX(-50%)
+	animation-duration 1s
+	animation-fill-mode forwards
+.selTeam
+	width 24px
+	height 24px
+	display inline-block
+	&:not(:last-child)
+		margin-right 8px
+@keyframes selTeamsEl
+	0%
+		opacity 1
+	75%
+		opacity 1
+	100%
+		opacity 0

@@ -1,0 +1,12 @@
+# import script/vars
+# import model/Type
+# import model/Stat
+# import model/Move
+# import model/Pkd
+# import model/Pkm
+# import script/preload
+# import script/create
+# import script/update
+# import script/render
+# import script/game
+# import script/app
